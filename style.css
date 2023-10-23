@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("./assets/Gotham/Gotham Regular/Gotham Regular.otf");
+}
+
+.hoverUp {
+    -webkit-animation: hoverout 0.5s;
+}
+.hoverUp:hover {
+    -webkit-animation: hoverin 0.5s;
+}
+
+@-webkit-keyframes hoverin {
+    from {-webkit-transform: translateY(0%);}
+    to {-webkit-transform: translateY(25%);}
+}
+
+@-webkit-keyframes hoverout {
+    from {-webkit-transform: translateY(25%);}
+    to {-webkit-transform: translateY(0%);}
+}
