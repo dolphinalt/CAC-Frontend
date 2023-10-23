@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GothamBold';
+  src: url('../public/Gotham/GothamBold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -10,9 +17,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 68, 68, 68;
+    --background-start-rgb: 250, 251, 251;
+    --background-end-rgb: 250, 251, 251;
   }
 }
 
