@@ -9,24 +9,53 @@
 <body>
     <div id="nav"   style="opacity:1;   pointer-events: all;">
         <img id="navTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
-        <img id="navHomeBtn"    class=""        src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick=""></img>
-        <img id="navAboutBtn"   class=""        src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick=""></img>
-        <img id="navSignupBtn"  class=""        src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick=""></img>
+        <img id="navHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick=""></img>
+        <img id="navAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick=""></img>
+        <img id="navSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick=""></img>
     </div>
     <div id="home"  style="opacity:0;   pointer-events: none;">
         <img id="homeLogo"      class=""        src="assets/img/Logo.svg"      height="804"    width="846"     style="position:absolute;   top:104px;  left:582px;"></img>
-        <img id="homeSignupBtn" class=""        src="assets/img/signupBtn.svg" height="43"     width="252"     style="position:absolute;   top:893px;  left:898px;"                    onclick=""></img>
-        <img id="homeArrow"     class="hoverUp" src="assets/img/arrow.svg"     height="49"     width="81"      style="position:absolute;   top:951px;  left:984px;"                    onclick=""></img>
+        <img id="homeSignupBtn" class=""        src="assets/img/signupBtn.svg" height="43"     width="252"     style="position:absolute;   top:893px;  left:898px;"                    onclick="switchPage('home', 'signup')"></img>
+        <img id="homeArrow"     class="hoverUp" src="assets/img/arrow.svg"     height="49"     width="81"      style="position:absolute;   top:951px;  left:984px;"                    onclick="switchPage('home', 'signup')"></img>
         
     </div>
     <div id="signin"  style="opacity:1;   pointer-events: all;">
         <img id="signinLogo"    class=""        src="assets/img/logoSmall.svg" height="380"    width="400"     style="position:absolute;   top:75px;   left:805px;"></img>
         <img id="signinUname"   class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:456px;  left:775px;"></img>
         <img id="signinPw"      class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:585px;  left:775px;"></img>
-        <img id="signinGo"      class=""        src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:753px;  left:899px;      opacity:0.75;"></img>
+        
+        <input  id = "signinPw" type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
+        <input  id = "signinPw" type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
+        
+        
+        <img id="signinGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:753px;  left:899px;      opacity:0.75;"></img>
         <img id="signinNoacc"   class=""        src="assets/img/noacc.svg"     height="32"     width="391"     style="position:absolute;   top:911px;  left:829px;      opacity:0.5;"></img>
-        <img id="signinNoacc"   class=""        src="assets/img/noacc.svg"     height="32"     width="391"     style="position:absolute;   top:911px;  left:829px;      opacity:0.5;"></img>
-        <img id="signinSignUp"  class=""        src="assets/img/signup.svg"    height="32"     width="114"     style="position:absolute;   top:952px;  left:967px;      opacity:0.5;"></img>
+        <img id="signinSignUp"  class="darker75"src="assets/img/signup.svg"    height="32"     width="114"     style="position:absolute;   top:952px;  left:967px;      opacity:0.75;"  onclick="switchPage('signin', 'signup')"></img>
+    </div>
+    <div id="signup"  style="opacity:0;   pointer-events: none;">
+        <img id="signupLogo"    class=""        src="assets/img/logoSmall.svg" height="380"    width="400"     style="position:absolute;   top:75px;   left:805px;"></img>
+        <img id="signupUname"   class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:456px;  left:775px;"></img>
+        <img id="signupPw"      class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:585px;  left:775px;"></img>
+        
+        <input  id = "signupPw" type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
+        <input  id = "signupPw" type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
+        
+        
+        <img id="signupRestRad" class="darker75"src="assets/img/restRadio.svg" height="50"     width="50"      style="position:absolute;   top:715px;  left:775px;      opacity: 0.75;"onclick=""></img>
+        <img id="signupRestHelp"class="darker50"src="assets/img/help.svg"      height="30"     width="30"      style="position:absolute;   top:725px;  left:1234px;     opacity: 0.5;" onclick=""></img>
+        <img id="signupRest"    class=""        src="assets/img/restaurant.svg"height="32"     width="191"     style="position:absolute;   top:724px;  left:929px;"></img>
+        <img id="signupGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:794px;  left:899px;      opacity:0.75;"></img>
+        <img id="signupAlracc"  class=""        src="assets/img/alracc.svg"    height="32"     width="437"     style="position:absolute;   top:911px;  left:805px;      opacity:0.5;"></img>
+        <img id="signupSignUp"  class="darker75"src="assets/img/signin.svg"    height="32"     width="106"     style="position:absolute;   top:952px;  left:971px;      opacity:0.75;"  onclick="switchPage('signup', 'signin')"></img>
     </div>
 </body>
+<script>
+    
+function switchPage(current, page) {
+    document.getElementById(current).style.opacity = "0";
+    document.getElementById(current).style.pointerEvents = "none";
+    document.getElementById(page).style.opacity = "1";
+    document.getElementById(page).style.pointerEvents = "all";
+}
+</script>
 </html>
