@@ -80,9 +80,34 @@
             </div>
         </div>
     </div>
+    <div id="createMenu"  style="opacity:1;   pointer-events: all;">
+        <input  id="createMenuName" type="resturauntNameInput"     placeholder="NAME" style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
+        <div id="createMenuItem1">
+            <input  id="createMenuItem1Name" type="resturauntItemInput"     placeholder="NAME" style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <input  id="createMenuItem1Cost" type="resturauntItemInput"     placeholder="COST" style="position:absolute;    top:406px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+            
+            <!-- image upload -->
+            <img id="menuItem1img"      class=""    src="assets/img/upload.svg"     style="height:250px; width:260px; position:absolute;    top:491px;  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:480px;  left:354px;"></img>
+            <!-- image upload -->
+            
+            <textarea  id="createMenuItem1Ingredients" type="resturauntItemInput"     placeholder="INGREDIENTS" style="position:absolute;    top:480px;      left:656px;  height:266px;  width:933px;    text-align:left;"></textarea>
+        </div>
+        <div id="createMenuItem2" style="opacity:0.5;">
+            <input  id="createMenuItem2Name" type="resturauntItemInput"     placeholder="CREATE NEW ITEM" style="position:absolute;    top:896px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <input  id="createMenuItem2Cost" type="resturauntItemInput"     placeholder="COST" style="position:absolute;    top:896px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+            
+            <!-- image upload -->
+            <img id="menuItem2img"      class=""    src="assets/img/upload.svg"     style="height:250px; width:260px; position:absolute;    top:981px;  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem2imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:970px;  left:354px;"></img>
+            <!-- image upload -->
+            
+            <textarea  id="createMenuItem2Ingredients" type="resturauntItemInput"     placeholder="INGREDIENTS" style="position:absolute;    top:970px;      left:656px;  height:266px;  width:933px;    text-align:left;"></textarea>
+        </div>
+    </div>
 
     <!-- HARDCODED STUFF HERE -->
-    <div id="menu"  style="opacity:1;   pointer-events: all;">
+    <div id="menu"  style="opacity:0;   pointer-events: none;">
         <div id="menuName"      class="resturauntName"                 style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
             CALIFORNIA PIZZA KITCHEN
         </div>

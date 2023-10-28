@@ -77,6 +77,10 @@
     color: #444444;
 }
 
+body {
+    background-color: #FAFBFB;
+}
+
 allergen {
     color: #FF5757;
 }
@@ -101,4 +105,38 @@ input[type="password"] {
     opacity: 1;
     text-align: center;
     color: #444444;
+}
+
+input[type="resturauntNameInput"] {
+    font-family: Gotham-Bold;
+    font-size: 64px;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 1;
+    text-align: center;
+    color: #444444;
+}
+
+input[type="resturauntItemInput"] {
+    font-family: Gotham-Bold;
+    font-size: 34px;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 1;
+    text-align: center;
+    color: #444444;
+}
+
+textarea {
+    font-family: Gotham-Bold;
+    font-size: 34px;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 1;
+    text-align: center;
+    color: #444444;
+    resize: none;
 }
