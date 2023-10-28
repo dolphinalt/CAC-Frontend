@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fearless</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
         <img id="homeArrow"     class="hoverUp" src="assets/img/arrow.svg"     height="49"     width="81"      style="position:absolute;   top:951px;  left:984px;"                    onclick="switchPage('home', 'signup')"></img>
         
     </div>
-    <div id="signin"  style="opacity:1;   pointer-events: all;">
+    <div id="signin"  style="opacity:0;   pointer-events: none;">
         <img id="signinLogo"    class=""        src="assets/img/logoSmall.svg" height="380"    width="400"     style="position:absolute;   top:75px;   left:805px;"></img>
         <img id="signinUname"   class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:456px;  left:775px;"></img>
         <img id="signinPw"      class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:585px;  left:775px;"></img>
@@ -47,6 +48,37 @@
         <img id="signupGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:794px;  left:899px;      opacity:0.75;"></img>
         <img id="signupAlracc"  class=""        src="assets/img/alracc.svg"    height="32"     width="437"     style="position:absolute;   top:911px;  left:805px;      opacity:0.5;"></img>
         <img id="signupSignUp"  class="darker75"src="assets/img/signin.svg"    height="32"     width="106"     style="position:absolute;   top:952px;  left:971px;      opacity:0.75;"  onclick="switchPage('signup', 'signin')"></img>
+    </div>
+    <div id="menu"  style="opacity:1;   pointer-events: all;">
+        <div id="menuName"      class="resturauntName"                 style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
+            NAME
+        </div>
+        <div id="menuItem1">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+                Test
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:406px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                $
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item1.jpg"     style="height:250px; width:260px; position:absolute;    top:491px;  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:480px;  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:480px;      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Description, ingredient, ingredient, ingredient, <allergen>allergen</allergen>, ingredient, ingredient
+            </div>
+        </div>
+        <div id="menuItem2">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:896px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+                Test
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:896px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                $
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item1.jpg"     style="height:250px; width:260px; position:absolute;    top:981px;  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:970px;  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:970px;      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Description, ingredient, ingredient, ingredient, <allergen>allergen</allergen>, ingredient, ingredient
+            </div>
+        </div>
     </div>
 </body>
 <script>

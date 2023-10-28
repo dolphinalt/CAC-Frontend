@@ -64,6 +64,22 @@
     to {opacity: 0.75;}
 }
 
+.resturauntName {
+    font-family: Gotham-Bold;
+    font-size: 64px;
+    color: #444444;
+    text-align: center;
+}
+
+.itemName {
+    font-family: Gotham-Bold;
+    font-size: 34px;
+    color: #444444;
+}
+
+allergen {
+    color: #FF5757;
+}
 
 input[type="text"] {
     font-family: Gotham-Bold;
