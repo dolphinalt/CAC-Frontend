@@ -14,7 +14,7 @@
         <img id="navAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick=""></img>
         <img id="navSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick=""></img>
     </div>
-    <div id="home"  style="opacity:0;   pointer-events: none;">
+    <div id="home"  style="opacity:1;   pointer-events: all;">
         <img id="homeLogo"      class=""        src="assets/img/Logo.svg"      height="804"    width="846"     style="position:absolute;   top:104px;  left:582px;"></img>
         <img id="homeSignupBtn" class=""        src="assets/img/signupBtn.svg" height="43"     width="252"     style="position:absolute;   top:893px;  left:898px;"                    onclick="switchPage('home', 'signup')"></img>
         <img id="homeArrow"     class="hoverUp" src="assets/img/arrow.svg"     height="49"     width="81"      style="position:absolute;   top:951px;  left:984px;"                    onclick="switchPage('home', 'signup')"></img>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <div id="createMenu"  style="opacity:1;   pointer-events: all;">
+    <div id="createMenu"  style="opacity:0;   pointer-events: none;">
         <input  id="createMenuName" type="resturauntNameInput"     placeholder="NAME" style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
         <div id="createMenuItem1">
             <input  id="createMenuItem1Name" type="resturauntItemInput"     placeholder="NAME" style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
@@ -104,6 +104,7 @@
             
             <textarea  id="createMenuItem2Ingredients" type="resturauntItemInput"     placeholder="INGREDIENTS" style="position:absolute;    top:970px;      left:656px;  height:266px;  width:933px;    text-align:left;"></textarea>
         </div>
+        <img id="createMenuUpdate"      class="darker75"    src="assets/img/updatebtn.svg" height="64" width="225"     style="position:absolute; top:1315px;left:911px; opacity:0.75; pointer-events:all;" onclick="//update backend"></img>
     </div>
 
     <!-- HARDCODED STUFF HERE -->
