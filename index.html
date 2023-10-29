@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="home"  style="opacity:1;   pointer-events: all;">
+    <div id="home"  style="opacity:0;   pointer-events: none;">
         <img id="homeNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
         <img id="homeNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1557px;    opacity:1;"     onclick="switchPage('home', 'home')"></img>
         <img id="homeNavAboutBtn"   class="darker50"src="assets/img/appBtn.svg"      height="32"     width="98"      style="position:absolute;   top:44px;   left:1702px;    opacity:0.5;"   onclick="showDropdown('home')"></img>
         <img id="homeNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('home', 'signup')"></img>
-        <div id="homeDropdown"  style="opacity:0;   pointer-events: all;">
+        <div id="homeDropdown"  style="opacity:0;   pointer-events: none;">
             <img id="homeDropdownFind"  class="darker50"src="assets/img/findBtn.svg" height="32"     width="85"     style="position:absolute;   top:88px;   left:1716px;"   onclick="switchPage('home', 'find')"></img>
             <img id="homeDropdownProfile"  class="darker50"src="assets/img/profileBtn.svg" height="32"     width="149"     style="position:absolute;   top:133px;   left:1716px;"   onclick="switchPage('home', 'profile')"></img>
         </div>
@@ -65,6 +65,24 @@
         <img id="signupGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:794px;  left:899px;      opacity:0.75;" onClick="createUser('suUnID','suPwID')"></img>
         <img id="signupAlracc"  class=""        src="assets/img/alracc.svg"    height="32"     width="437"     style="position:absolute;   top:911px;  left:805px;      opacity:0.5;"></img>
         <img id="signupSignUp"  class="darker75"src="assets/img/signin.svg"    height="32"     width="106"     style="position:absolute;   top:952px;  left:971px;      opacity:0.75;"  onclick="switchPage('signup', 'signin')"></img>
+    </div>
+    <div id="find"  style="opacity:1;   pointer-events: all;">
+        <img id="findNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="findNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1557px;    opacity:1;"     onclick="switchPage('find', 'home')"></img>
+        <img id="findNavAboutBtn"   class="darker50"src="assets/img/appBtn.svg"      height="32"     width="98"      style="position:absolute;   top:44px;   left:1702px;    opacity:0.5;"   onclick="showDropdown('find')"></img>
+        <img id="findNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('find', 'signup')"></img>
+        <div id="findDropdown"  style="opacity:0;   pointer-events: all;">
+            <img id="DropdownFind"  class="darker50"src="assets/img/findBtn.svg" height="32"     width="85"     style="position:absolute;   top:88px;   left:1716px;"   onclick="switchPage('find', 'find')"></img>
+            <img id="DropdownProfile"  class="darker50"src="assets/img/profileBtn.svg" height="32"     width="149"     style="position:absolute;   top:133px;   left:1716px;"   onclick="switchPage('find', 'profile')"></img>
+        </div>
+        <div id="menuName"      class="resturauntName"                 style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
+            RESTAURANTS
+        </div>
+            <div id="Resturaunt1"  onclick="switchPage('find', 'menucpk')">
+            <div id="CPK" style="position:absolute; top:396px; left:672px; width:704px; height:361px; outline: 5px solid #444444"></div>
+            <img id="findRest1"   class=""        src="assets/img/restaurant1.svg"  height="45"     width="568"     style="position:absolute;   top:426px;   left:731px;"></img>
+            <img id="findRest1Logo"   class=""        src="assets/img/rest1logo.svg"  height="240"     width="240"     style="position:absolute;   top:486px;   left:904px;"></img>
+        </div>
     </div>
     <div id="menu"  style="opacity:0;   pointer-events: none;">
         <img id="menuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
@@ -136,8 +154,7 @@
         <img id="createMenuUpdate"      class="darker75"    src="assets/img/updatebtn.svg" height="64" width="225"     style="position:absolute; top:1315px;left:911px; opacity:0.75; pointer-events:all;" onclick="//update backend"></img>
     </div>
 
-    <!-- HARDCODED STUFF HERE -->
-    <div id="menu"  style="opacity:0;   pointer-events: none;">
+    <div id="menucpk"  style="opacity:0;   pointer-events: none;">
         <img id="menuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
         <img id="menuNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('menu', 'home')"></img>
         <img id="menuNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('menu', 'menu')"></img>
