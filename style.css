@@ -79,6 +79,7 @@
 
 body {
     background-color: #FAFBFB;
+    overflow-x: hidden;
 }
 
 allergen {
