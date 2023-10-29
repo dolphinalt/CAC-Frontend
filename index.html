@@ -8,48 +8,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="nav"   style="opacity:1;   pointer-events: all;">
-        <img id="navTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
-        <img id="navHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick=""></img>
-        <img id="navAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick=""></img>
-        <img id="navSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick=""></img>
-    </div>
     <div id="home"  style="opacity:1;   pointer-events: all;">
+        <img id="homeNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="homeNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('home', 'home')"></img>
+        <img id="homeNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('home', 'about')"></img>
+        <img id="homeNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('home', 'signup')"></img>
+        
+        
         <img id="homeLogo"      class=""        src="assets/img/Logo.svg"      height="804"    width="846"     style="position:absolute;   top:104px;  left:582px;"></img>
         <img id="homeSignupBtn" class=""        src="assets/img/signupBtn.svg" height="43"     width="252"     style="position:absolute;   top:893px;  left:898px;"                    onclick="switchPage('home', 'signup')"></img>
         <img id="homeArrow"     class="hoverUp" src="assets/img/arrow.svg"     height="49"     width="81"      style="position:absolute;   top:951px;  left:984px;"                    onclick="switchPage('home', 'signup')"></img>
         
     </div>
     <div id="signin"  style="opacity:0;   pointer-events: none;">
+        <img id="signinNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="signinNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('signin', 'home')"></img>
+        <img id="signinNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('signin', 'about')"></img>
+        <img id="signinNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('signin', 'signup')"></img>
+
+
         <img id="signinLogo"    class=""        src="assets/img/logoSmall.svg" height="380"    width="400"     style="position:absolute;   top:75px;   left:805px;"></img>
         <img id="signinUname"   class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:456px;  left:775px;"></img>
         <img id="signinPw"      class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:585px;  left:775px;"></img>
         
-        <input  id = "signinPw" type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
-        <input  id = "signinPw" type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
+        <input  id = "unID"     type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
+        <input  id = "pwID"     type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
         
         
-        <img id="signinGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:753px;  left:899px;      opacity:0.75;"></img>
+        <img id="signinGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:753px;  left:899px;      opacity:0.75;" onclick="auth('unID','pwID')"></img>
         <img id="signinNoacc"   class=""        src="assets/img/noacc.svg"     height="32"     width="391"     style="position:absolute;   top:911px;  left:829px;      opacity:0.5;"></img>
         <img id="signinSignUp"  class="darker75"src="assets/img/signup.svg"    height="32"     width="114"     style="position:absolute;   top:952px;  left:967px;      opacity:0.75;"  onclick="switchPage('signin', 'signup')"></img>
     </div>
     <div id="signup"  style="opacity:0;   pointer-events: none;">
+        <img id="signupNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="signupNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('signup', 'home')"></img>
+        <img id="signupNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('signup', 'about')"></img>
+        <img id="signupNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('signup', 'signup')"></img>
+        
+        
         <img id="signupLogo"    class=""        src="assets/img/logoSmall.svg" height="380"    width="400"     style="position:absolute;   top:75px;   left:805px;"></img>
         <img id="signupUname"   class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:456px;  left:775px;"></img>
         <img id="signupPw"      class=""        src="assets/img/fillIn.svg"    height="100"    width="499"     style="position:absolute;   top:585px;  left:775px;"></img>
         
-        <input  id = "signupPw" type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
-        <input  id = "signupPw" type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
+        <input  id = "suUnID" type="text"     placeholder="USERNAME" style="position:absolute;    top:490px;  left:869px;     letter-spacing:8px;">
+        <input  id = "suPwID" type="password" placeholder="PASSWORD" style="position:absolute;    top:619px;  left:869px;     letter-spacing:8px;">
         
         
-        <img id="signupRestRad" class="darker75"src="assets/img/restRadio.svg" height="50"     width="50"      style="position:absolute;   top:715px;  left:775px;      opacity: 0.75;"onclick=""></img>
+        <img id="signupRestRad" class="darker75"src="assets/img/restRadio.svg" height="50"     width="50"      style="position:absolute;   top:715px;  left:775px;      opacity: 0.75;"onclick="setResturuant()"></img>
+        <img id="signupRestRadFilled" class="darker75"src="assets/img/restRadioFilled.svg" height="50"     width="50"      style="position:absolute;   top:715px;  left:775px;      opacity: 0;     pointer-events: none;"onclick="setResturuant()"></img>
         <img id="signupRestHelp"class="darker50"src="assets/img/help.svg"      height="30"     width="30"      style="position:absolute;   top:725px;  left:1234px;     opacity: 0.5;" onclick=""></img>
         <img id="signupRest"    class=""        src="assets/img/restaurant.svg"height="32"     width="191"     style="position:absolute;   top:724px;  left:929px;"></img>
-        <img id="signupGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:794px;  left:899px;      opacity:0.75;"></img>
+        <img id="signupGo"      class="darker75"src="assets/img/letsgo.svg"    height="76"     width="249"     style="position:absolute;   top:794px;  left:899px;      opacity:0.75;" onClick="createUser('suUnID','suPwID')"></img>
         <img id="signupAlracc"  class=""        src="assets/img/alracc.svg"    height="32"     width="437"     style="position:absolute;   top:911px;  left:805px;      opacity:0.5;"></img>
         <img id="signupSignUp"  class="darker75"src="assets/img/signin.svg"    height="32"     width="106"     style="position:absolute;   top:952px;  left:971px;      opacity:0.75;"  onclick="switchPage('signup', 'signin')"></img>
     </div>
     <div id="menu"  style="opacity:0;   pointer-events: none;">
+        <img id="menuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="menuNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('menu', 'home')"></img>
+        <img id="menuNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('menu', 'about')"></img>
+        <img id="menuNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('menu', 'signup')"></img>
+
+
         <div id="menuName"      class="resturauntName"                 style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
             NAME
         </div>
@@ -81,6 +100,12 @@
         </div>
     </div>
     <div id="createMenu"  style="opacity:0;   pointer-events: none;">
+        <img id="createMenuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="createMenuNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('createMenu', 'home')"></img>
+        <img id="createMenuNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('createMenu', 'about')"></img>
+        <img id="createMenuNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('createMenu', 'signup')"></img>
+
+
         <input  id="createMenuName" type="resturauntNameInput"     placeholder="NAME" style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
         <div id="createMenuItem1">
             <input  id="createMenuItem1Name" type="resturauntItemInput"     placeholder="NAME" style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
@@ -109,6 +134,12 @@
 
     <!-- HARDCODED STUFF HERE -->
     <div id="menu"  style="opacity:0;   pointer-events: none;">
+        <img id="menuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
+        <img id="menuNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('menu', 'home')"></img>
+        <img id="menuNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('menu', 'about')"></img>
+        <img id="menuNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('menu', 'signup')"></img>
+
+
         <div id="menuName"      class="resturauntName"                 style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
             CALIFORNIA PIZZA KITCHEN
         </div>
@@ -141,12 +172,127 @@
     </div>
 </body>
 <script>
-    
 function switchPage(current, page) {
     document.getElementById(current).style.opacity = "0";
     document.getElementById(current).style.pointerEvents = "none";
     document.getElementById(page).style.opacity = "1";
     document.getElementById(page).style.pointerEvents = "all";
+}
+
+var resturuant = false;
+
+function setResturuant() {
+    if (!resturuant) {
+        document.getElementById("signupRestRad").style.opacity="0";
+        document.getElementById("signupRestRad").style.pointerevents="none";
+        document.getElementById("signupRestRadFilled").style.opacity="0.75";
+        document.getElementById("signupRestRad").style.pointerevents="all";
+        resturuant=true;
+    } else {
+        document.getElementById("signupRestRad").style.opacity="0.75";
+        document.getElementById("signupRestRad").style.pointerevents="all";
+        document.getElementById("signupRestRadFilled").style.opacity="0";
+        document.getElementById("signupRestRad").style.pointerevents="none";
+        resturuant=false;
+    }
+}
+
+</script>
+<script>
+function auth(unID, pwID) {
+    username = document.getElementById(unID).value;
+    password = document.getElementById(pwID).value;
+    console.log(username);
+    console.log(password);
+    const body = {
+        username: username,
+        password: password
+    };
+    console.log(body);
+    const read_options = {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        body: JSON.stringify(body),
+        credentials: 'omit', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    };
+    // fetch the data from API
+    fetch("http://flask.ethanzhao.us/api/cac/authenticate", read_options)
+        // response is a RESTful "promise" on any successful fetch
+        .then(response => {
+            // check for response errors
+            if (response.status !== 200) {
+                const errorMsg = 'Database read error: ' + response.status;
+                return;
+            }
+            // valid response will have json data
+            response.json().then(data => {
+            if (data !== null) {
+                document.cookie = "auth="+data;
+                console.log("success")
+            }
+            else {
+                console.log("invalid login credentials")
+            }
+        })
+    })
+    // catch fetch errors (ie ACCESS to server blocked)
+    .catch(err => {
+      console.error(err);
+    });
+}
+
+function createUser(unid, pwid) {
+    username = document.getElementById(unid).value;
+    password = document.getElementById(pwid).value;
+    console.log(resturuant);
+    const body = {
+        username: username,
+        password: password,
+        "name": "user",
+        "pfp": "base64==",
+        "about": "testing",
+        "password": "Password1!",
+        "allergies": "none",
+        "isResturuant": resturuant
+    };
+    const read_options = {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+        body: JSON.stringify(body),
+        credentials: 'omit', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    };
+    // fetch the data from API
+    fetch("http://flask.ethanzhao.us/api/cac/users", read_options)
+        // response is a RESTful "promise" on any successful fetch
+        .then(response => {
+            // check for response errors
+            if (response.status !== 200) {
+                const errorMsg = 'Database read error: ' + response.status;
+                return;
+            }
+            // valid response will have json data
+            response.json().then(data => {
+            if (data !== null) {
+                console.log("success")
+            }
+            else {
+                // display invalid creds
+            }
+        })
+    })
+    // catch fetch errors (ie ACCESS to server blocked)
+    .catch(err => {
+      console.error(err);
+    });
+    auth(unid, pwid)
 }
 </script>
 </html>

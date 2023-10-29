@@ -1,0 +1,7 @@
+Allergies: <allergies>
+
+Here is a recipe:
+
+<recipe>
+
+return the recipe, wrapped with <response></response> tags, but with <allergen></allergen> tags around the item I am allergic to. Don't return the allergen itself.
