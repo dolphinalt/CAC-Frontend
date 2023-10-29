@@ -13,9 +13,9 @@
         <img id="homeNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1557px;    opacity:1;"     onclick="switchPage('home', 'home')"></img>
         <img id="homeNavAboutBtn"   class="darker50"src="assets/img/appBtn.svg"      height="32"     width="98"      style="position:absolute;   top:44px;   left:1702px;    opacity:0.5;"   onclick="showDropdown('home')"></img>
         <img id="homeNavSignupBtn"  class="darker50"src="assets/img/signupBtn.svg" height="32"     width="142"     style="position:absolute;   top:44px;   left:1844px;    opacity:0.5;"   onclick="switchPage('home', 'signup')"></img>
-        <div id="homeDropdown"  style="opacity:1;   pointer-events: all;">
-            <img id="homeDropdown"  class="darker50"src="assets/img/findBtn.svg" height="32"     width="85"     style="position:absolute;   top:88px;   left:1716px;    opacity:0.5;"   onclick="switchPage('home', 'places')"></img>
-            <img id="homeDropdown"  class="darker50"src="assets/img/profileBtn.svg" height="32"     width="149"     style="position:absolute;   top:133px;   left:1716px;    opacity:0.5;"   onclick="switchPage('home', 'profile')"></img>
+        <div id="homeDropdown"  style="opacity:0;   pointer-events: all;">
+            <img id="homeDropdownFind"  class="darker50"src="assets/img/findBtn.svg" height="32"     width="85"     style="position:absolute;   top:88px;   left:1716px;"   onclick="switchPage('home', 'find')"></img>
+            <img id="homeDropdownProfile"  class="darker50"src="assets/img/profileBtn.svg" height="32"     width="149"     style="position:absolute;   top:133px;   left:1716px;"   onclick="switchPage('home', 'profile')"></img>
         </div>
         
         
@@ -195,6 +195,20 @@ function switchPage(current, page) {
     document.getElementById(current).style.pointerEvents = "none";
     document.getElementById(page).style.opacity = "1";
     document.getElementById(page).style.pointerEvents = "all";
+}
+
+var dropOn = false;
+
+function showDropdown(current) {
+    if (!dropOn) {
+        document.getElementById(current + "Dropdown").style.opacity = "0.5";
+        document.getElementById(current + "Dropdown").style.pointerEvents = "all";
+        dropOn = true;
+    } else {
+        document.getElementById(current + "Dropdown").style.opacity = "0";
+        document.getElementById(current + "Dropdown").style.pointerEvents = "none";
+        dropOn = false;
+    }
 }
 
 var resturuant = false;
