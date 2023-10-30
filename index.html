@@ -66,7 +66,7 @@
         <img id="signupAlracc"  class=""        src="assets/img/alracc.svg"    height="32"     width="437"     style="position:absolute;   top:911px;  left:805px;      opacity:0.5;"></img>
         <img id="signupSignUp"  class="darker75"src="assets/img/signin.svg"    height="32"     width="106"     style="position:absolute;   top:952px;  left:971px;      opacity:0.75;"  onclick="switchPage('signup', 'signin')"></img>
     </div>
-    <div id="find"  style="opacity:1;   pointer-events: all;">
+    <div id="find"  style="opacity:0;   pointer-events: none;">
         <img id="findNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
         <img id="findNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1557px;    opacity:1;"     onclick="switchPage('find', 'home')"></img>
         <img id="findNavAboutBtn"   class="darker50"src="assets/img/appBtn.svg"      height="32"     width="98"      style="position:absolute;   top:44px;   left:1702px;    opacity:0.5;"   onclick="showDropdown('find')"></img>
@@ -95,7 +95,7 @@
             NAME
         </div>
         <div id="menuItem1">
-            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:406px;      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
                 Test
             </div>
             <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:406px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div id="menuItem2">
-            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:896px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:896px;      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
                 Test
             </div>
             <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:896px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
@@ -130,7 +130,7 @@
 
         <input  id="createMenuName" type="resturauntNameInput"     placeholder="NAME" style="position:absolute;    top:204px;                  height:102px;   width:100%;                           line-height:102px;">
         <div id="createMenuItem1">
-            <input  id="createMenuItem1Name" type="resturauntItemInput"     placeholder="NAME" style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <input  id="createMenuItem1Name" type="resturauntItemInput"     placeholder="NAME" style="position:absolute;    top:406px;      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
             <input  id="createMenuItem1Cost" type="resturauntItemInput"     placeholder="COST" style="position:absolute;    top:406px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
             
             <!-- image upload -->
@@ -141,7 +141,7 @@
             <textarea  id="createMenuItem1Ingredients" type="resturauntItemInput"     placeholder="INGREDIENTS" style="position:absolute;    top:480px;      left:656px;  height:266px;  width:933px;    text-align:left;"></textarea>
         </div>
         <div id="createMenuItem2" style="opacity:0.5;">
-            <input  id="createMenuItem2Name" type="resturauntItemInput"     placeholder="CREATE NEW ITEM" style="position:absolute;    top:896px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <input  id="createMenuItem2Name" type="resturauntItemInput"     placeholder="CREATE NEW ITEM" style="position:absolute;    top:896px;      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
             <input  id="createMenuItem2Cost" type="resturauntItemInput"     placeholder="COST" style="position:absolute;    top:896px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
             
             <!-- image upload -->
@@ -154,7 +154,7 @@
         <img id="createMenuUpdate"      class="darker75"    src="assets/img/updatebtn.svg" height="64" width="225"     style="position:absolute; top:1315px;left:911px; opacity:0.75; pointer-events:all;" onclick="//update backend"></img>
     </div>
 
-    <div id="menucpk"  style="opacity:0;   pointer-events: none;">
+    <div id="menucpk"  style="opacity:1;   pointer-events: all;">
         <img id="menuNavTextLogo"   class=""        src="assets/img/textLogo.svg"  height="32"     width="177"     style="position:absolute;   top:44px;   left:44px;"></img>
         <img id="menuNavHomeBtn"    class="darker50"src="assets/img/homeBtn.svg"   height="32"     width="100"     style="position:absolute;   top:44px;   left:1533px;    opacity:1;"     onclick="switchPage('menu', 'home')"></img>
         <img id="menuNavAboutBtn"   class="darker50"src="assets/img/aboutBtn.svg"  height="32"     width="120"     style="position:absolute;   top:44px;   left:1679px;    opacity:0.5;"   onclick="switchPage('menu', 'menu')"></img>
@@ -165,29 +165,81 @@
             CALIFORNIA PIZZA KITCHEN
         </div>
         <div id="menuItem1">
-            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:406px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
-                HAWAIIAN
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 0));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
+                THE WORKS
             </div>
-            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:406px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 0));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
                 19.99
             </div>
-            <img id="menuItem1img"      class=""    src="assets/img/item1.jpg"     style="height:250px; width:260px; position:absolute;    top:491px;  left:355px;  object-fit: cover;"></img>
-            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:480px;  left:354px;"></img>
-            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:480px;      left:656px;  height:266px;  width:933px;    text-align:left;">
-                Fresh pineapple, applewood smoked ham, and slivered scalions. Contains <allergen>dairy</allergen>
+            <img id="menuItem1img"      class=""    src="assets/img/item1.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 0));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 0));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 0));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Spicy italian sausage, rustic pepperoni, cermini mushrooms, <allergen>Mozzaella</allergen>, red onions, green peppers, olives, and wild Greek oregano.
             </div>
         </div>
         <div id="menuItem2">
-            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:896px;      left:354px;  height:45px;   width:443px;    text-align:left;      line-height:45px;">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 1));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
+                HAWAIIAN
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 1));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                19.99
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item2.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 1));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 1));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 1));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Fresh pineapple, applewood smoked ham, and slivered scalions.
+            </div>
+        </div>
+        <div id="menuItem3">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 2));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
                 PEPPERONI
             </div>
-            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:896px;      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 2));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
                 18.99
             </div>
-            <img id="menuItem1img"      class=""    src="assets/img/item2.jpg"     style="height:250px; width:260px; position:absolute;    top:981px;  left:355px;  object-fit: cover;"></img>
-            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:970px;  left:354px;"></img>
-            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:970px;      left:656px;  height:266px;  width:933px;    text-align:left;">
-                Rustic and spicy pepperoni with <allergen>fresh Mozzaerella</allergen> and wild Greek oregano. Contains <allergen>Dairy</allergen>
+            <img id="menuItem1img"      class=""    src="assets/img/item3.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 2));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 2));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 2));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Rustic and spicy pepperoni with <allergen>fresh Mozzaerella</allergen> and wild Greek oregano.
+            </div>
+        </div>
+        <div id="menuItem4">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 3));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
+                MUSHROOM PEPPERONI SAUSAGE
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 3));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                19.99
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item4.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 3));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 3));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 3));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Cremini mushrooms, rustic pepperoni, spicy Italian sausage, fresh torn basil, <allergen>Mozzerella</allergen>, and wild Greek oregano.
+            </div>
+        </div>
+        <div id="menuItem5">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 4));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
+                MARGHERITA
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 4));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                16.49
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item5.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 4));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 4));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 4));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Italian tomatoes with fresh <allergen>Mozzarella</allergen>, fresh basil, and <allergen>Parmesan</allergen>.
+            </div>
+        </div>
+        <div id="menuItem6">
+            <div id="menuItem1Name"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 5));      left:354px;  height:45px;   width:750px;    text-align:left;      line-height:45px;">
+                FIVE CHEESE + FRESH TOMATO
+            </div>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(406px + (490px * 5));      left:1660px; height:45px;   width:100px;    text-align:right;     line-height:45px;">
+                17.99
+            </div>
+            <img id="menuItem1img"      class=""    src="assets/img/item6.jpg"     style="height:250px; width:260px; position:absolute;    top:calc(491px + (490px * 5));  left:355px;  object-fit: cover;"></img>
+            <img id="menuItem1imgFrame" class=""    src="assets/img/foodFrame.svg" height="273"    width="266"    style="position:absolute;    top:calc(480px + (490px * 5));  left:354px;"></img>
+            <div id="menuItem1Cost"     class="itemName"               style="position:absolute;    top:calc(480px + (490px * 5));      left:656px;  height:266px;  width:933px;    text-align:left;">
+                Fresh and traditional <allergen>Mozzarella</allergen>, <allergen>Montery Jack</allergen>, smoked <allergen>Gouda</allergen>, and <allergen>Romao</allergen> with tomato and fresh basil.
             </div>
         </div>
     </div>
